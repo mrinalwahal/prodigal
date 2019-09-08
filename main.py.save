@@ -1,0 +1,37 @@
+# ----------------------------------------- #
+#
+# ----------------------------------------- #
+
+from flask import Flask
+
+import pymongo
+
+app = Flask(__name__)
+
+client = pymongo.MongoClient('mongodb+srv://prodigal_be_test_01:prodigaltech@test-01-ateon.mongodb.net/sample_training')
+db = client['sample_training']
+print(db.collection_names())
+
+c_names = {}
+
+for collection in db.collection_names():
+    c_names[collection] = db[collection]
+
+
+@app.route()
+def getStudents(methods =)
+
+def students(payload):
+	
+	return(list(payload.find()))
+	
+
+#for c in c_names:
+#    print(c, " - ", c_names[c].find().count())
+
+#students = c_names['students'].find()
+
+#for student in students:
+#    print(student)
+
+print(db.students.find().count())
