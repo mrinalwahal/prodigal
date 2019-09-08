@@ -6,7 +6,7 @@
   - [What can be improved?](#improvements)
   - [Difficulties Encountered](#difficulties)
 
-<a name="usage">
+<a name="usage"></a>
 
 #### Usage
 
@@ -14,7 +14,7 @@ Though the `flask` API is deployed at [wahal.pythonanywhere.com](https://wahal.p
 
 Therefore, I've added a `manual_tests.py` file in the codebase, which can easily be executed to test all the coded functions being called for testing all the endpoints.
 
-<a name="changes">
+<a name="changes"></a>
 
 #### Changes in Output
 
@@ -22,7 +22,7 @@ Since the file `manual_tests.py` only calls the functions for testing the code, 
 
 However, the calculated information by the functions should be correct. Therefore, you may not see the metadata info like `student_id` or `class_id` appearing in the output from `manual_tests.py` file. This is because this extra metadata is returned in responses from the Flask API. Reading that code would clarify this for you.
 
-<a name="improvements">
+<a name="improvements"></a>
 
 #### Improvements Suggested
 
@@ -30,7 +30,9 @@ In a lot of cases the required output format of the result forces the coder to p
 
 In an ideal environment, the API's job should be to solely return the fetched or calculated data. And the front-end (receiving) client must do the job of processing retrieved data to present it in any fancy fashion required.
 
-<a name="difficulties">
+*The code could also use some exception handling, which I couldn't add due to shortage of time. But I duly acknowledge that.*
+
+<a name="difficulties"></a>
 
 #### Difficulties Envountered during dev
 
